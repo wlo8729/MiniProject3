@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Product Management System</title>
+    </head>
+    <body>
+        {% block content %}
+        <h1 style="font-size:2vw">This is the current Inventory</h1>
+        {{ data.to_html(classes="table table-striped") | safe}}
+        <br>
+        <br>
+        <form action="/" method="post">
+            <input type="submit" value="Return Home">
+        </form>
+        {% endblock content %}
+
+    </body>
+</html>

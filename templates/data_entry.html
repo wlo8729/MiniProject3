@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Product Management System</title>
+    </head>
+    <body>
+        {% block content %}
+
+        <h1 style="font-size:4vw">Product Management System</h1>
+        <h1 style="font-size:2vw">Enter Product Data</h1>
+
+
+        <form action="/tableinfo" method="post">
+            Product Category: <input name = "name" type="text"/><br>
+            Product Description: <input name = "symbol" type="text"/><br>
+            Price: <input name = "price" type="text"/><br>
+            Product Code: <input name = "code" type="text"/><br>
+            <input type="submit"/>
+        </form>
+
+
+
+
+        <form action="/" method="post">
+            <input type="submit" value="Return Home">
+        </form>
+        {% endblock content %}
+
+    </body>
+</html>

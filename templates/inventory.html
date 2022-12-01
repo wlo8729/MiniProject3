@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Product Management System</title>
+    </head>
+    <body>
+        {% block content %}
+        <h1 style="font-size:4vw">Inventory On Hand</h1>
+        {{ data.to_html(classes="table table-striped") | safe}}
+        <br>
+        <br>
+        <form action="/" method="post">
+            <input type="submit" value="Ok">
+        </form>
+        {% endblock content %}
+
+    </body>
+</html>
